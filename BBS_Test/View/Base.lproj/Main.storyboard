@@ -250,7 +250,7 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKQ-mq-zeg" userLabel="Title View">
-                                                <rect key="frame" x="0.0" y="315.5" width="375" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="300" width="375" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPISODE N°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-Pz-qW7">
                                                         <rect key="frame" x="32" y="10" width="53" height="11"/>
@@ -270,8 +270,8 @@
                                                     <constraint firstItem="aFq-Pz-qW7" firstAttribute="leading" secondItem="MKQ-mq-zeg" secondAttribute="leading" constant="32" id="2UY-c2-oJ3"/>
                                                     <constraint firstItem="u0f-Aa-zrP" firstAttribute="leading" secondItem="aFq-Pz-qW7" secondAttribute="leading" id="3eE-fG-HvO"/>
                                                     <constraint firstItem="aFq-Pz-qW7" firstAttribute="top" secondItem="MKQ-mq-zeg" secondAttribute="top" constant="10" id="Be4-2f-c4M"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Ni2-u8-XG8"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aFq-Pz-qW7" secondAttribute="trailing" id="aFB-TH-4yb"/>
-                                                    <constraint firstAttribute="bottom" secondItem="u0f-Aa-zrP" secondAttribute="bottom" constant="24" id="e8f-L6-UoM"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u0f-Aa-zrP" secondAttribute="trailing" id="o6d-vi-NuJ"/>
                                                     <constraint firstItem="u0f-Aa-zrP" firstAttribute="top" secondItem="aFq-Pz-qW7" secondAttribute="bottom" constant="8" id="pYt-AC-DWO"/>
                                                 </constraints>
