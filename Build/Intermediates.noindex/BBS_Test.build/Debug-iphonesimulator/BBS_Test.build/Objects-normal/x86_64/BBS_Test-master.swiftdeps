@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "b2e22e1d3c14e9a79aa13c431030416a"
+build_time: [1525535646, 321368000]
+inputs:
+  "/Users/clem/BBS_Test/BBS_Test/Controllers/DetailViewController.swift": [1525535598, 0]
+  "/Users/clem/BBS_Test/BBS_Test/Model/Film.swift": [1525474046, 0]
+  "/Users/clem/BBS_Test/BBS_Test/Model/Character.swift": [1525470730, 0]
+  "/Users/clem/BBS_Test/BBS_Test/Controllers/MainViewController.swift": [1525535476, 0]
+  "/Users/clem/BBS_Test/BBS_Test/AppDelegate.swift": [1525424977, 0]
+  "/Users/clem/BBS_Test/BBS_Test/Model/CustomDateFormatter.swift": [1525472413, 0]
