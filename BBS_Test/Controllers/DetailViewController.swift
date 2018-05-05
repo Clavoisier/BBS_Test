@@ -32,6 +32,7 @@ class DetailViewController: UIViewController {
         self.loadCharacters()
     }
     
+    // Hide homebar button
     override func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
     }
@@ -41,7 +42,7 @@ class DetailViewController: UIViewController {
         return .lightContent
     }
     
-    // MARK: - private methods
+    // MARK: - Loading methods
     private func showLoading() {
         let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
         
@@ -60,21 +61,21 @@ class DetailViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     
+    // MARK: - private methods
     private func updateFields() {
         guard let film = self.film else {
             return
         }
         
+        self.titreLabel.text = film.title?.uppercased()
+        self.productionLabel.text = film.producer
         self.producerLabel.text = (film.director != nil) ? "Réalisé par \(film.director!)" : ""
         self.coverImage.image = (film.episode_id != nil) ? UIImage(named: "episode_\(film.episode_id!)") : nil
         self.episodeLabel.text = (film.episode_id != nil) ? "ÉPISODE \(film.episode_id!)" : ""
-        self.titreLabel.text = film.title?.uppercased()
         self.dateLabel.text = (film.release_date != nil) ? "SORTI LE \(DateFormatter.ddMMMyyyy.string(from:film.release_date!))".uppercased() : ""
         self.synopsisLabel.text = film.opening_crawl
-        self.productionLabel.text = film.producer
-        
+
         var names = ""
-        
         for character in characters {
             if names.count > 0 {
                 names += ", "
@@ -122,7 +123,6 @@ class DetailViewController: UIViewController {
         }
     }
     
-
     // MARK: - IBAction
     @IBAction func tapOnBackButton(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)

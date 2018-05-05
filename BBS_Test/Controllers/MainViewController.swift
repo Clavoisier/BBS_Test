@@ -19,7 +19,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var selectedFilm:Film?
     private var films:[Film]?
     private var sortByHistory:Bool = true
-
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -31,7 +30,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.showLoading()
         self.loadFilms()
     }
-
+    
+    // Hide homebar button
     override func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
     }
@@ -157,9 +157,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 }
 
-
 // MARK: - CustomTableCellViewCell
-
 class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var coverImage: UIImageView!
